@@ -1,51 +1,51 @@
 .advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .advantages__title {
-    @extend %hidden;
+  @extend %hidden;
 }
 .advantages__subtitle {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    @include font-size (700, 14px, 1.14, 0.03em);
-    text-transform: uppercase;
+  @include font-size(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
 }
 
 .advantages__text {
-    @include font-size (400, 14px, 1.71, 0.03em)
+  @include font-size(400, 14px, 1.71, 0.03em);
 }
 
 .advantages__list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .advantages__item {
-    width: calc((100% - 90px) / 4);
-   
-    &::before {
-        display: inline-block;
-        content: '';
-        height: 120px;
-        width: 270px;
-        background-color: $secondary-background-color;
-        border-radius: 4px;
-        margin-bottom: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    &:nth-child(1)::before {
-        background-image: url(../../images/antenna.svg);
-    }
-    &:nth-child(2)::before {
-        background-image: url(../../images/clock.svg);
-    }
-    &:nth-child(3)::before {
-        background-image: url(../../images/diagram.svg);
-    }
-    &:nth-child(4)::before {
-        background-image: url(../../images/astronaut.svg);
-    }
+  width: calc((100% - 90px) / 4);
+
+  &::before {
+    display: inline-block;
+    content: '';
+    height: 120px;
+    width: 270px;
+    background-color: $secondary-background-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+  }
+  &:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+  }
 }
