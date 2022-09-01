@@ -14,38 +14,39 @@
 
 .advantages__text {
   @include font-size(400, 14px, 1.71, 0.03em);
+  color: $secondary-color;
 }
 
 .advantages__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .advantages__item {
   width: calc((100% - 90px) / 4);
+}
 
-  &::before {
-    display: inline-block;
-    content: '';
-    height: 120px;
-    width: 270px;
-    background-color: $secondary-background-color;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  &:nth-child(1)::before {
+.advantages__icon {
+  display: inline-block;
+  height: 120px;
+  width: 270px;
+  background-color: $secondary-background-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  .advantages__item:nth-child(1) & {
     background-image: url(../images/antenna.svg);
   }
-  &:nth-child(2)::before {
+  .advantages__item:nth-child(2) & {
     background-image: url(../images/clock.svg);
   }
-  &:nth-child(3)::before {
+  .advantages__item:nth-child(3) & {
     background-image: url(../images/diagram.svg);
   }
-  &:nth-child(4)::before {
+  .advantages__item:nth-child(4) & {
     background-image: url(../images/astronaut.svg);
   }
 }
