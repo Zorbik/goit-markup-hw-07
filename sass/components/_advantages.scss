@@ -20,12 +20,11 @@
 .advantages__list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
 .advantages__item {
-  width: calc((100% - 90px) / 4);
+  width: calc(100% - 3 * 30px) / 4;
 }
 
 .advantages__icon {
@@ -34,9 +33,9 @@
   width: 270px;
   background-color: $secondary-background-color;
   border-radius: 4px;
-  margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 30px;
   .advantages__item:nth-child(1) & {
     background-image: url(../images/antenna.svg);
   }

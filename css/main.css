@@ -355,12 +355,11 @@ button {
 .advantages__list {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
 .advantages__item {
-  width: calc((100% - 90px) / 4);
+  width: calc(100% - 90px)/4;
 }
 
 .advantages__icon {
@@ -369,9 +368,9 @@ button {
   width: 270px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 30px;
 }
 .advantages__item:nth-child(1) .advantages__icon {
   background-image: url(../images/antenna.svg);
